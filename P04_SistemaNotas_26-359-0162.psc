@@ -95,7 +95,7 @@ Algoritmo SistemaNotas
                                 notas[i] <- notas[i] + puntos_extra
                                 Si notas[i] > 100 Entonces
                                     notas[i] <- 100 // Límite establecido en el reto
-                                FinSi
+									FinSi
                             FinPara
                             Escribir "Puntos extra aplicados."
                     FinSegun
@@ -107,6 +107,6 @@ Algoritmo SistemaNotas
             De Otro Modo:
                 Escribir "Opción no válida. Intente de nuevo."
         FinSegun
-        Escribir "" // Salto de línea estético
+        Escribir "" // Salto de línea
     Hasta Que opcion = 5
 FinAlgoritmo

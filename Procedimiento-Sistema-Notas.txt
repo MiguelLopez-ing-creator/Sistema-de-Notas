@@ -1,0 +1,17 @@
+Procedimiento para PROYECTO DE SISTEMA DE NOTAS:
+
+Paso 1: Primero decidí estructurar el programa en dos grandes bloques para no enredarme. Primero creé una pequeña función arriba que solo se encarga de cambiar los números a palabras, y abajo hice el algoritmo principal con un menú que se repite para que el usuario elija qué hacer.
+
+Paso 2: Empecé creando la función categoría, busqué cómo conectar varios Si... Entonces anidados, la función recibe la nota del alumno y va preguntando rango por rango. Si está entre 90 y 100, la guarda como 'Sobresaliente'. Si no se cumple, pasa a la siguiente pregunta hasta que, si el alumno tiene menos de 60n marca automáticamente en Insuficiente.
+
+Paso 3: En el algoritmo principal, investigué cómo guardar 5 notas sin crear 5 variables diferentes, y encontré los Arreglos (arreglo_notas[5]). Yo lo veo como un casillero con 5 cajones numerados. Luego, usé un ciclo Mientras para hacer el menú. Le puse la condición Mientras seleccion_menu <> 5 para que el programa siga repitiendo las opciones en la pantalla hasta que el usuario presione el 5 para salir".
+
+Paso 4: Para que el programa sea ordenado, inventé una variable que se llama notas_ya_existen y la puse en Falso. Cuando el usuario entra a la Opción 1, usamos un ciclo Para que va del 1 al 5 pidiendo las notas. Para evitar que pongan notas que no se encuentren en el rango de 0 a 100, usé un Repetir para bligar a escribir un número correcto. Una vez que se llenan los 5 cajones, cambio el interruptor a Verdadero. Si el usuario intenta ir a las estadísticas sin haber llenado las notas, el programa le dice que todavía no hay datos.
+
+Paso 5: Para las demás opciones, simplemente hacemos que la computadora revise cada catewgoría del 1 al 5 de forma automática:
+* En la Opción 2, lee la nota y llama a la función de arriba para mostrar la palabra al lado.
+* En la Opción 3 (Estadísticas), creé variables para ir sumando todo y sacar el promedio. Para la nota más alta, asumí que la primera era la mayor y luego fui comparando con las demás. Si encontraba una más grande, la reemplazaba.
+* En la Opción 4, le sumamos puntos extra a todas las notas, pero cuidando con un Si que ninguna nota supere el límite de 100.
+
+Paso 6: Me costó un poco entender cómo conectar los ciclos con los arreglos, pero me ayudé organizando el problema por partes. Al final, logré que el programa sea seguro, no se rompa con notas falsas y calcule todo automáticamente.
+
